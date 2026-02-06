@@ -2,7 +2,7 @@ export const TEMPLATES = [
   {
     id: 'minimal',
     name: '미니멀 젠',
-    category: '심플',
+    category: 'Minimal',
     style: { bg: '#FFFFFF', text: '#000000', accent: '#9ca3af', font: 'Helvetica Neue' },
     mood: 'Apple 키노트, 무인양품(MUJI)',
     characteristics: ['여백 60% 이상', '요소 3개 이하', '무채색 기반', '얇은 산세리프'],
@@ -12,7 +12,7 @@ export const TEMPLATES = [
   {
     id: 'monochrome',
     name: '블랙 & 화이트',
-    category: '심플',
+    category: 'Minimal',
     style: { bg: '#000000', text: '#ffffff', accent: '#ffffff', font: 'DM Sans' },
     mood: 'Karl Lagerfeld, 갤러리 도록',
     characteristics: ['순수 흑백', '강한 명암 대비', '대담한 타이포', '네거티브 스페이스'],
@@ -22,7 +22,7 @@ export const TEMPLATES = [
   {
     id: 'glass',
     name: '글래스모피즘',
-    category: '모던',
+    category: 'Modern',
     style: { bg: '#E8EEF5', text: '#334155', accent: '#38bdf8', font: 'Inter' },
     mood: 'iOS Big Sur, Windows 11',
     characteristics: ['반투명 blur 20px', '밝은 테두리', '그림자 레이어링', '그라데이션 배경'],
@@ -32,7 +32,7 @@ export const TEMPLATES = [
   {
     id: 'cyberpunk',
     name: '네온 퓨처',
-    category: '모던',
+    category: 'Cyberpunk',
     style: { bg: '#050505', text: '#00ff9d', accent: '#ff00ff', font: 'Roboto Mono' },
     mood: 'Blade Runner, CD Projekt',
     characteristics: ['네온 글로우', '어둠+형광', '글리치 효과', 'HUD 스타일'],
@@ -42,7 +42,7 @@ export const TEMPLATES = [
   {
     id: 'corporate',
     name: '코퍼레이트',
-    category: '비즈니스',
+    category: 'Business',
     style: { bg: '#ffffff', text: '#0f172a', accent: '#0ea5e9', font: 'Inter' },
     mood: 'McKinsey, LinkedIn',
     characteristics: ['깔끔한 차트', '파란색 신뢰감', '명확한 계층', '프로 느낌'],
@@ -52,7 +52,7 @@ export const TEMPLATES = [
   {
     id: 'dashboard',
     name: '대시보드 UI',
-    category: '테크니컬',
+    category: 'Technical',
     style: { bg: '#111827', text: '#F9FAFB', accent: '#10B981', font: 'Inter' },
     mood: 'Grafana, 관제 시스템',
     characteristics: ['다크 UI', '그래프 위젯', '상태 표시'],
@@ -62,7 +62,7 @@ export const TEMPLATES = [
   {
     id: 'forest',
     name: '포레스트',
-    category: '내추럴',
+    category: 'Nature',
     style: { bg: '#fcf9ee', text: '#2c3e2e', accent: '#567c5d', font: 'Merriweather' },
     mood: 'National Geographic, 환경 다큐',
     characteristics: ['자연 녹색/갈색', '유기적 곡선', '에코 무드', '편안한 톤'],
@@ -72,7 +72,7 @@ export const TEMPLATES = [
   {
     id: 'luxury',
     name: '골든 아워',
-    category: '럭셔리',
+    category: 'Luxury',
     style: { bg: '#1c1917', text: '#fafaf9', accent: '#d4af37', font: 'Playfair Display' },
     mood: 'Rolex, Louis Vuitton',
     characteristics: ['골드/블랙', '세리프', '얇은 라인', '대칭 구성'],
@@ -82,7 +82,7 @@ export const TEMPLATES = [
   {
     id: 'synthwave',
     name: '신스웨이브',
-    category: '레트로',
+    category: 'Retro',
     style: { bg: '#2e1065', text: '#f0abfc', accent: '#22d3ee', font: 'Righteous' },
     mood: 'Miami Vice, Stranger Things',
     characteristics: ['네온 핑크/시안', '선셋 그라데이션', '크롬 텍스트'],
@@ -92,7 +92,7 @@ export const TEMPLATES = [
   {
     id: 'gallery',
     name: '모던 갤러리',
-    category: '크리에이티브',
+    category: 'Creative',
     style: { bg: '#f3f4f6', text: '#111827', accent: '#ec4899', font: 'Abril Fatface' },
     mood: 'MoMA, 현대미술관',
     characteristics: ['여백과 오브제', '비대칭', '컬러 팝'],
@@ -102,7 +102,7 @@ export const TEMPLATES = [
   {
     id: 'academic',
     name: '학술 논문',
-    category: '학술',
+    category: 'Academic',
     style: { bg: '#fffbf0', text: '#3f3f46', accent: '#9f1239', font: 'Times New Roman' },
     mood: 'Harvard 논문, Nature',
     characteristics: ['세리프 본문', '정돈된 여백', '각주 스타일'],
@@ -111,4 +111,4 @@ export const TEMPLATES = [
   },
 ];
 
-export const CATEGORIES = ['전체', ...Array.from(new Set(TEMPLATES.map((t) => t.category)))];
+export const CATEGORIES = ['All', ...Array.from(new Set(TEMPLATES.map((t) => t.category)))];

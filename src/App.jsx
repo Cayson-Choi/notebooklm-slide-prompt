@@ -6,13 +6,13 @@ import ThumbnailSlide from './components/ThumbnailSlide';
 import PromptPanel from './components/PromptPanel';
 
 export default function NotebookLMBuilder() {
-  const [selectedCategory, setSelectedCategory] = useState('전체');
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedTemplate, setSelectedTemplate] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredTemplates = useMemo(() => {
     return TEMPLATES.filter((t) => {
-      const matchCategory = selectedCategory === '전체' || t.category === selectedCategory;
+      const matchCategory = selectedCategory === 'All' || t.category === selectedCategory;
       const sq = searchQuery.trim().toLowerCase();
       const matchSearch =
         !sq ||
@@ -28,7 +28,7 @@ export default function NotebookLMBuilder() {
     CATEGORIES.forEach((c) => {
       counts[c] = 0;
     });
-    counts['전체'] = TEMPLATES.length;
+    counts['All'] = TEMPLATES.length;
     TEMPLATES.forEach((t) => {
       counts[t.category] = (counts[t.category] || 0) + 1;
     });
