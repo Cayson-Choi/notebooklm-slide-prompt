@@ -237,6 +237,38 @@ export const TEMPLATES = [
     layoutGuide: 'Geometric Composition, Diagonal Layout',
   },
 
+  // === Cartoon ===
+  {
+    id: 'cartoon',
+    name: 'Pop Comics',
+    category: 'Cartoon',
+    style: { bg: '#FFF500', text: '#000000', accent: '#FF0000', font: 'Comic Neue' },
+    mood: 'Marvel Comics, Graphic Novel',
+    characteristics: ['Halftone Dots', 'Speech Bubbles', 'Action Lines', 'Primary Colors'],
+    texture: 'Ben-Day Dots',
+    layoutGuide: 'Diagonal Composition, Boom Effects',
+  },
+  {
+    id: 'anime',
+    name: 'Anime Aesthetic',
+    category: 'Cartoon',
+    style: { bg: '#ffffff', text: '#000000', accent: '#db2777', font: 'Nunito' },
+    mood: 'Ghibli, High Color Anime',
+    characteristics: ['Soft Gradients', 'Shining Highlights', 'Pastel Vivid', 'Dynamic Poses'],
+    texture: 'Glow Particles',
+    layoutGuide: 'Diagonal Layout, Sparkle Effects',
+  },
+  {
+    id: 'clay',
+    name: 'Clay 3D',
+    category: 'Cartoon',
+    style: { bg: '#f1f5f9', text: '#475569', accent: '#818cf8', font: 'Nunito' },
+    mood: 'Nintendo Kirby, Clay Render',
+    characteristics: ['Soft Rounded', 'Pastel Colors', 'Soft Shadows', 'Tactile Feel'],
+    texture: 'Clay Surface',
+    layoutGuide: 'Rounded 3D Objects, Clean Background',
+  },
+
   // === Academic ===
   {
     id: 'academic',

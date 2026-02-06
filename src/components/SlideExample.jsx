@@ -55,11 +55,12 @@ const SlideExample = ({ template }) => {
             </>
           )}
           {layoutKind === 'comic' && (
-            <>
-              <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(circle at 30% 30%, ${s.accent}22, transparent 55%)` }} />
-              <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(0deg, transparent, transparent 6px, rgba(0,0,0,0.06) 6px, rgba(0,0,0,0.06) 7px)' }} />
-            </>
-          )}
+        <>
+          <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(circle at 30% 30%, ${s.accent}22, transparent 55%)` }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.03) 10px, rgba(0,0,0,0.03) 11px)' }} />
+          <div style={{ position: 'absolute', right: -20, bottom: -20, width: 100, height: 100, background: s.accent, borderRadius: '50%', opacity: 0.2 }} />
+        </>
+      )}
           {(layoutKind === 'card-light' || layoutKind === 'card-dark') && (
             <div style={{ position: 'absolute', left: 0, top: 0, right: 0, height: 10, background: s.accent, opacity: 0.85 }} />
           )}
