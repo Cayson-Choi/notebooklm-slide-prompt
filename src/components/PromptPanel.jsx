@@ -35,7 +35,7 @@ const PromptPanel = ({ template, onClose }) => {
             <div className="text-sm font-bold text-white flex items-center gap-2">
               {template.name}
               {template.mergedCount > 1 && (
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-200 border border-zinc-700">통합 {template.mergedCount}개</span>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-200 border border-zinc-700">Merged {template.mergedCount}</span>
               )}
             </div>
             <div className="text-xs text-zinc-500">{template.category}</div>
@@ -52,13 +52,13 @@ const PromptPanel = ({ template, onClose }) => {
             onClick={() => setTab('example')}
             className={`px-4 py-2 text-xs font-bold ${tab === 'example' ? 'bg-white text-black' : 'text-zinc-400'}`}
           >
-            예제 화면
+            Preview
           </button>
           <button
             onClick={() => setTab('prompt')}
             className={`px-4 py-2 text-xs font-bold ${tab === 'prompt' ? 'bg-white text-black' : 'text-zinc-400'}`}
           >
-            프롬프트
+            Prompt
           </button>
         </div>
       </div>
@@ -83,7 +83,7 @@ const PromptPanel = ({ template, onClose }) => {
             copied ? 'bg-green-600 text-white' : 'bg-white text-black'
           }`}
         >
-          {copied ? '✓ 복사됨!' : '📋 프롬프트 복사'}
+          {copied ? '✓ Copied!' : '📋 Copy Prompt'}
         </button>
       </div>
     </div>

@@ -158,7 +158,7 @@ export default function NotebookLMBuilder() {
             <div className="p-6 md:p-8">
               <div className="inline-flex items-center gap-2 text-[11px] px-3 py-1 rounded-full bg-black/30 border border-white/10 text-white/70">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                Curated templates (10)
+                Curated templates ({TEMPLATES.length})
               </div>
               <div className="mt-4 text-2xl md:text-3xl font-black tracking-tight">
                 A radically cleaner way to generate <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-300 via-violet-300 to-cyan-300">slide prompts</span>

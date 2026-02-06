@@ -1,31 +1,31 @@
 export const generatePrompt = (template) => {
-  return `[NotebookLM 슬라이드 디자인 요청]
+  return `[NotebookLM Slide Design Request]
 
-■ 역할: 전문 프레젠테이션 디자이너
-■ 스타일: ${template.name}
-■ 카테고리: ${template.category}
+■ Role: Professional Presentation Designer
+■ Style: ${template.name}
+■ Category: ${template.category}
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-[컬러 시스템]
-• 배경: ${template.style.bg}
-• 텍스트: ${template.style.text}
-• 강조: ${template.style.accent}
-• 폰트: ${template.style.font}
+[Color System]
+• Background: ${template.style.bg}
+• Text: ${template.style.text}
+• Accent: ${template.style.accent}
+• Font: ${template.style.font}
 
-[무드 & 레퍼런스]
+[Mood & Reference]
 ${template.mood}
 
-[디자인 특성]
+[Design Characteristics]
 ${(template.characteristics || []).map((c) => `• ${c}`).join('\n')}
 
-[텍스처]
+[Texture]
 ${template.texture}
 
-[레이아웃 가이드]
+[Layout Guide]
 ${template.layoutGuide}
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-위 가이드를 바탕으로 고품질 슬라이드를 생성해주세요.`;
+Please generate high-quality slides based on the guide above.`;
 };
