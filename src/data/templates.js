@@ -1,4 +1,36 @@
 export const TEMPLATES = [
+  // === AI Special ===
+  {
+    id: 'holographic',
+    name: 'Holographic Prism',
+    category: 'AI Special',
+    style: { bg: '#ffffff', text: '#1e1b4b', accent: '#db2777', font: 'Outfit' },
+    mood: 'Iridescent, Glass Futures',
+    characteristics: ['Mesh Gradients', 'Glass Dispersion', 'Dreamy Blurs', 'Chromatic Aberration'],
+    texture: 'Holographic Foil',
+    layoutGuide: 'Floating Glass Cards, Aurora Background',
+  },
+  {
+    id: 'neobrutalism',
+    name: 'Neo-Brutalism',
+    category: 'AI Special',
+    style: { bg: '#FFDE00', text: '#000000', accent: '#000000', font: 'Space Grotesk' },
+    mood: 'Trending Web, Gumroad Style',
+    characteristics: ['Hard Shadows (4px)', 'Thick Outlines', 'Bold Colors', 'Raw Shapes'],
+    texture: 'Paper Cut',
+    layoutGuide: 'Masonry Grid, Hard Border Containers',
+  },
+  {
+    id: 'cinematic',
+    name: 'Cinematic Noir',
+    category: 'AI Special',
+    style: { bg: '#09090b', text: '#e4e4e7', accent: '#dc2626', font: 'Manrope' },
+    mood: 'A24 Films, High Drama',
+    characteristics: ['Film Grain', 'Spotlight Lighting', 'Wide Aspect Ratio', 'Emotional Typography'],
+    texture: '35mm Film Grain',
+    layoutGuide: 'Letterbox Format, Rule of Thirds',
+  },
+
   // === Minimal ===
   {
     id: 'minimal',

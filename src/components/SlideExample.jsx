@@ -16,12 +16,13 @@ const SlideExample = ({ template }) => {
   const layoutKind = (() => {
     const id = template.id;
     if (id === 'minimal') return 'minimal';
-    if (id === 'monochrome') return 'poster';
+    if (id === 'monochrome' || id === 'cinematic') return 'poster';
     if (id === 'cyberpunk') return 'hud';
     if (id === 'dashboard') return 'dashboard';
     if (id === 'academic') return 'paper';
     if (id === 'cartoon') return 'comic';
-    if (id === 'luxury') return 'luxury';
+    if (id === 'neobrutalism') return 'comic'; // Reuse comic layout for bold feel
+    if (id === 'luxury' || id === 'holographic') return 'luxury';
     return isDark ? 'card-dark' : 'card-light';
   })();
 
