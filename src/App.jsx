@@ -206,10 +206,7 @@ export default function NotebookLMBuilder() {
 
                       <div className="mt-3 text-[12px] text-white/60 line-clamp-2">{template.mood}</div>
 
-                      <div className="mt-4 flex flex-wrap gap-2">
-                        <span className="text-[10px] px-2 py-1 rounded-full bg-black/25 border border-white/10 text-white/65">BG {s.bg}</span>
-                        <span className="text-[10px] px-2 py-1 rounded-full bg-black/25 border border-white/10 text-white/65">Font {s.font}</span>
-                      </div>
+
                     </div>
 
                     <div className="h-1 w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
