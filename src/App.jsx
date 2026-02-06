@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Grid3X3, Layers, ExternalLink, Search } from 'lucide-react';
 import { TEMPLATES, CATEGORIES } from './data/templates';
 import StyleThumbnail from './components/StyleThumbnail';
-import SlideExample from './components/SlideExample';
+import ThumbnailSlide from './components/ThumbnailSlide';
 import PromptPanel from './components/PromptPanel';
 
 export default function NotebookLMBuilder() {
@@ -186,9 +186,9 @@ export default function NotebookLMBuilder() {
                     className="group text-left rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all overflow-hidden focus:outline-none focus:ring-2 focus:ring-white/20"
                   >
                     <div className="p-4">
-                      {/* custom thumbnail - showing SlideExample immediately */}
-                      <div className="rounded-2xl overflow-hidden border border-white/10 pointer-events-none">
-                        <SlideExample template={template} />
+                      {/* custom thumbnail - showing scaled SlideExample */}
+                      <div className="pointer-events-none">
+                        <ThumbnailSlide template={template} />
                       </div>
 
                       <div className="mt-3 flex items-start justify-between gap-3">
